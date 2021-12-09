@@ -9,12 +9,12 @@
         input[type=text] {
             width: 300px;
             font-size: 16px;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            padding: 12px 10px 12px 10px;
+            border: 100px solid #000000;
+            border-radius: 5px;
+            padding: 29px 20px 52px 40px;
         }
         #submit {
-            border-radius: 2px;
+            border-radius: 10px;
             padding: 10px 32px;
             font-size: 16px;
         }
@@ -22,7 +22,7 @@
 </head>
 <body>
  
-<h2> Từ Điển Anh - Việt </h2>
+<h1> <u>Từ Điển Anh - Việt</u> </h1>
 <form method="post"> 
 <?php
 $dictionary = [
@@ -33,7 +33,14 @@ $dictionary = [
         "an" => "Mai Chiếm An",
         "tuan" => "Võ Văn Tuấn",
         "ka" => "Đặng Thùy Ngân",
-        "captain" => "Lê Biên Thùy"
+        "captain" => "Lê Biên Thùy",
+        "địa chỉ" => "133 - Lý Thường Kiệt",
+        "trung tâm" => "Code Gym Quảng Trị",
+        "lớp" => "C1021I1",
+        "rep" => "màu đỏ",
+        "blue" => "màu xanh",
+        "yellow" => "màu vàng",
+        "green" => "xanh lá"
         ];
         ?>
         <?php
@@ -42,7 +49,7 @@ $dictionary = [
             $flag =0;
             foreach ($dictionary as $word => $description) {
                 if ($word == $searchWord) {
-                    echo "từ:" . $word . ". <br/> Nghĩa của từ:" . $description;
+                    echo "từ muốn tìm :   " . $word . ". <br/> kết quả: " . $description;
                     echo "<br/>";
                     $flag =1;
                 }
