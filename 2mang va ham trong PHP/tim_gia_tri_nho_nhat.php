@@ -1,19 +1,16 @@
 <?php
-function sallest() {
-$sma= [9,3,5,7,4,8];
-$min =$sma[0];
-for ($i= 1; $i <count($sma); $i++) {
-    if ($sma[$i] < $min) {
-        $min = $sma[$i];
+//khai báo hàm
+function smallest() {
+    //tạo mảng
+    $sma =[31,34,68,32,94,27];
+    $min = $sma[2];
+    for ($i= 0; $i < count($sma); $i++) {
+        if ($sma[$i] < $min){
+            $min = $sma[$i];
+        }
+
     }
+    echo $min;
 }
-// echo "<pre>";
-// print_r($sma) ;
-// echo "</pre>";
-echo $min;
-}
-sallest();
+smallest();
 ?>
-
-
-

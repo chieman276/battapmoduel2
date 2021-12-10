@@ -7,7 +7,7 @@ function biggest(){
     ];
     $max = $big[0][0];
     for ($i=0; $i < count($big); $i++){
-        for ($j=0; $j < 5; $j++){
+        for ($j=0; $j < count($big[0]); $j++){
             if ($big[$i][$j] > $max){
                 $max = $big[$i][$j];
             }
