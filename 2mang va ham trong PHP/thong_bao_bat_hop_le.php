@@ -1,16 +1,10 @@
 <?php
 //kiểm tra xem đã submit form hay chưa
 if ($_SERVER['REQUEST_METHOD'] == "POST"){
-    //
-
-    //
-    $x = $_REQUEST["x"];
+    // lấy giá trị luu vào bộ nhớ
+   $x = $_REQUEST["x"];
     $y = $_REQUEST["y"];
-
-    //
-
-
-// function calculate($x,$y){
+//xu lý và xuất
     if ($x != 0 && $y != 0){
         echo $x + $y;
         echo "<br>";
@@ -20,14 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
         echo "<br>";
         echo $x / $y;
         echo "<br>";
-
     } else{
         echo "không hợp lệ!!";
     }
-
  }
-
-
 ?>
 <form method="POST">
     nhập x: <input type="text" name="x"><br>
