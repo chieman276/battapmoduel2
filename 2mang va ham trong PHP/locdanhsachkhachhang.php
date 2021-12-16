@@ -7,8 +7,9 @@ table {
 }
 
 h2 {
-    background-attachment: ;
+    background-attachment:
 }
+
 </style>
 <?php
 $customerList = [
@@ -36,7 +37,12 @@ $customerList = [
         "name" => "Nguyễn Đình Thi",
         "day_of_birth" => "1983/08/19",
         "address" => "Hà Nội",
-        "profile" => "images/img5.jpg"]
+        "profile" => "images/img5.jpg"],
+    "6" => [
+        "name" => "Phan Thị Thu Thảo ",
+        "day_of_birth" => "2003/04/22",
+        "address" => "Quảng Trị",
+        "profile" => "images/img6.jpg"],
 ];
 ?>
 

@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
     // lấy giá trị luu vào bộ nhớ
    $x = $_REQUEST["x"];
     $y = $_REQUEST["y"];
-//xu lý và xuất
+//xu lý và xuất0
     if ($x != 0 && $y != 0){
         echo $x + $y;
         echo "<br>";
