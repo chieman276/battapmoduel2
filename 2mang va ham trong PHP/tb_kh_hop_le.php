@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     if ($number <=100){
         echo $number;
     }else{
-        echo "Không hợp lệ!!";
+        echo "Không hợp lệ!!0";
     }
 
 }
