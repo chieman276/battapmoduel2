@@ -1,5 +1,7 @@
 <?php
+// phương thức bubbleSort($list) 
 function bubbleSort($list){
+    //
     for ($i = 0; $i < count($list)-1;$i++){
         for($j = count($list) -1; $j > $i; $j--)
         {
